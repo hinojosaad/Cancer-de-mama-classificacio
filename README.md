@@ -20,15 +20,15 @@ Adicionalent es proporciona l'arxiu _test_ que conte medicions de mostres de tom
 ## Arxius del repositori
 
 * Repte_classificacio.ipynb: Notebook amb el códi en python de la solució proposada al repte
-* preddictions.csv: Arxiu que conté les prediccions de diagnosi pels valors de les mostres en _test_ fetas pel millor model trobat 
+* predictions.csv: Arxiu que conté les prediccions de diagnosi pels valors de les mostres en _test_ fetas pel millor model trobat 
 
 
 ## Models utilizats i resultats
-Se utilizaron cuatro modelos distintos de la librería _sklearn_ combinados con un reescalado _RobustScaler_ obteniendo el siguiente desempeño antes y después de afinar parámetros
-
+Es van fer us de cinc models de classificació de la llibreria _sklearn_ combinats amb un reescalat _RobustScaler_ amb les seguents resultats amb la metrica f1 abans i desprès de fixar parameters
 |                            | **f1_macro** | **tuned f1_macro** |
 |----------------------------|--------------|--------------------|
-| **Random Forest**          | .7519        | .7619              |
-| **K Neighbors**            | .7682        | .7761              |
-| **Support Vector Machine** | .7501        | **.7822**          |
-| **Gradient Boosting**      | .7421        | .7621              |
+| **Decission Tree**         | .9193        | .9497              |
+| **Random Forest**          | .9575        | .9622              |
+| **K Neighbors**            | .9497        | .9665              |
+| **Support Vector Machine** | .9691        | **.9762**          |
+| **Gradient Boosting**      | .9503        | .9666              |
